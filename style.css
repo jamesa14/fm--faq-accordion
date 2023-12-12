@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url('/assets/images/background-pattern-desktop.svg');
+  background-image: url('assets/images/background-pattern-desktop.svg');
   background-position: center top;
   background-repeat: no-repeat;
   background-color: var(--light-pink);
@@ -74,14 +74,14 @@ h1 {
   position: absolute;
   top: -2px;
   right: 0;
-  background-image: url('/assets/images/icon-plus.svg');
+  background-image: url('assets/images/icon-plus.svg');
   background-size: 100%;
   width: 25px;
   height: 25px;
 }
 
 .faq.active button .icon {
-  background-image: url('/assets/images/icon-minus.svg');
+  background-image: url('assets/images/icon-minus.svg');
 }
 
 .faq button:hover {
