@@ -1,0 +1,100 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --gray-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+  background-image: url('/assets/images/background-pattern-desktop.svg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: var(--light-pink);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+
+}
+
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+  max-width: 31.25rem; /* 500px */
+  margin: 10rem auto 0;
+  background: var(--white);
+  border-radius: 30px;
+  padding: 2rem;
+  box-shadow: 4px 4px 20px rgba(0,0,0,0.05);
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.heading {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.heading img {
+  margin-right: 1.25rem;
+}
+
+.faq {
+  border-bottom: 1px solid #eee;
+  padding: 1.25rem 0;
+}
+
+.faq:last-of-type {
+  border-bottom: 0;
+}
+
+.faq button {
+  background: transparent;
+  border: 0;
+  width: 100%;
+  padding: 0 2rem 0 0;
+  margin: 0;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.0625rem;
+  color: var(--dark-purple);
+  position: relative;
+}
+
+.faq button .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url('/assets/images/icon-plus.svg');
+  background-size: 100%;
+  width: 25px;
+  height: 25px;
+}
+
+.faq.active button .icon {
+  background-image: url('/assets/images/icon-minus.svg');
+}
+
+.faq button:hover {
+  cursor: pointer;
+}
+
+.faq .faq-content {
+  transition: all 0.5s;
+  display: none;
+  opacity: 0;
+  color: var(--gray-purple);
+  margin-top: 1rem;
+}
+
+.faq.active .faq-content {
+  display: block;
+}
+
+.faq.active-display .faq-content {
+  opacity: 1;
+}
